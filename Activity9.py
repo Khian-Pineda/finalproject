@@ -1,22 +1,29 @@
-age=eval(input('Enter your age here--->'))
+#age
+age = eval(input("Enter your age: "))
 
-if age <= 7 and age >= 1:
-	print("You are a toddler")
+if age > 100:
+	print("\nyou are an Ancient One")
 
-if age <= 13 and >= 8:
-	print("You are a pre teen")
+elif age >= 60:
+	print("\nyou are a Senior Citizen")
 
-if age <= 18 and >= 14:
-	print("teenager")
+elif age >= 46:	
+	print("\nyou are in a Post Adulthood")
 
-if age <= 31 and >= 19:
-	print("You are in a early adulthood")
+elif age >= 32:
+	print("\nyou are in a Mid Adulthood")
 
-if age  <= 45 and >= 32:
-	print("You are in a mid adulthood")
+elif age >= 19:
+	print("\nyou are in a Early Adulthood")
 
-if age <= 59 and >= 46:
-	print("You are in a post adulthood")
+elif age >= 14:
+	print("\nyou are a Teenager")
 
-if age >= 60:
-	print("You are a senior citizen")
+elif age >= 8:
+	print("\nyou are a Pre teen")
+
+elif age >= 1:
+	print("\nyou are a Toddler")
+
+elif age < 1:
+	print("\nCondolence ")
