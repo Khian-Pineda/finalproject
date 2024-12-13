@@ -840,16 +840,12 @@ while tuloy == True:
                             print("Invalid input! Please enter a whole number.")
                     else:
                         print("Account not found!")
-
-
             def check_balance():
                     username = input("Enter your username: ")
                     if username in accounts:
                         print(f"Your balance: {accounts[username]}")
                     else:
                         print("Account not found!")
-
-
             def options():
                     while True:
                         print("\nBanking System")
