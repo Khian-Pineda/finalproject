@@ -1,23 +1,52 @@
 #FINALS PROJECT ITCS102
 #BY KHIAN MHARC L PINEDA
+import time
+import sys
+
+# Function to show loading progress
+def loading_screen(duration):
+    # Number of steps for progress
+    steps = 50
+    # Iterate through each step
+    for i in range(steps + 1):
+        # Calculate progress in percentage
+        progress = (i / steps) * 100
+        # Create a visual progress bar
+        bar = '#' * i + '-' * (steps - i)
+        # Print the loading message and progress bar
+        sys.stdout.write(f"\rLoading... [{bar}] {progress:.2f}%")
+        sys.stdout.flush()  # Ensure immediate display
+        time.sleep(duration / steps)  # Control the speed of loading
+
+    # After the loop, print a message indicating completion
+    sys.stdout.write("\rLoading... [####################] 100.00%\n")
+    sys.stdout.flush()
+    print("Task Completed!")
+
+# Call the loading screen function with a desired duration (e.g., 5 seconds)
+loading_screen(5)
+
+name = input("Please Enter your name ----> ")
+print ("Hi! " + name )
 import os
 tuloy = True
 while tuloy == True:
-    print("\n======================================================================================\nCode_Challenge1 --- 1 \tCode_Challenge11 --- 11 \tActivity1 --- 101 \nCode_Challenge2 --- 2 \tCode_Challenge12 --- 12 \tActivity2 --- 102 \nCode_Challenge3 --- 3 \tCode_Challenge13 --- 13 \tActivity3 --- 103 \nCode_Challenge4 --- 4 \tCode_Challenge14 --- 14 \tActivity4 --- 104 \nCode_Challenge5 --- 5 \tCode_Challenge15 --- 15 \tActivity5 --- 105 \nCode_Challenge6 --- 6 \tCode_Challenge16 --- 16 \tAvtivity6 --- 106 \nCode_Challenge7 --- 7 \t\t\t\t\tActivity7 --- 107 \nCode_Challenge8 --- 8 \t\t\t\t\tActivity8 --- 108 \nCode_Challenge9 --- 9 \t\t\t\t\tActivity9 --- 109 \nCode_Challenge10 -- 10 \t\t\t\t\tActivity8 --- 110 \n======================================================================================")
-    a = int(input("\nCHOOSE ONLY ONE CHALLENGE U WANT TO OPEN (TYPE ONLY THE NUMBER): ")) 
+    print("\n=====================================================================================\n\t\t\t\t\tMENU \nCode_Challenge1 --- 1 \tCode_Challenge11 --- 11 \tActivity1 --- 101 \nCode_Challenge2 --- 2 \tCode_Challenge12 --- 12 \tActivity2 --- 102 \nCode_Challenge3 --- 3 \tCode_Challenge13 --- 13 \tActivity3 --- 103 \nCode_Challenge4 --- 4 \tCode_Challenge14 --- 14 \tActivity4 --- 104 \nCode_Challenge5 --- 5 \tCode_Challenge15 --- 15 \tActivity5 --- 105 \nCode_Challenge6 --- 6 \tCode_Challenge16 --- 16 \tAvtivity6 --- 106 \nCode_Challenge7 --- 7 \t\t\t\t\tActivity7 --- 107 \nCode_Challenge8 --- 8 \t\t\t\t\tActivity8 --- 108 \nCode_Challenge9 --- 9 \t\t\t\t\tActivity9 --- 109 \nCode_Challenge10 -- 10 \t\t\t\t\tActivity110 --- 110 \nExit--0 \n======================================================================================")
+    a = int(input("\nCHOOSE ONLY ONE CHALLENGE U WANT TO OPEN (TYPE ONLY THE NUMBER): "))
+
+
     if a == 101:
         os.system("cls")
-
         def Activity101(Activity101):
-          print("Hello World")
+             print("Hello World")
         Activity101(Activity101)
         continue
+
     elif a == 102:
         os.system("cls")
-
         def Activity102(Activity102):
-            name = input( "Please enter a name -----> " )
-            print ( "Hi!" + name )
+           name = input( "Please enter a name -----> " )
+           print( "Hi!" + name )
         Activity102(Activity102)
         continue
 
@@ -840,12 +869,16 @@ while tuloy == True:
                             print("Invalid input! Please enter a whole number.")
                     else:
                         print("Account not found!")
+
+
             def check_balance():
                     username = input("Enter your username: ")
                     if username in accounts:
                         print(f"Your balance: {accounts[username]}")
                     else:
                         print("Account not found!")
+
+
             def options():
                     while True:
                         print("\nBanking System")
@@ -871,3 +904,6 @@ while tuloy == True:
                             print("Invalid option. Please try again.")
         code_challenge16()
         continue
+    else:   
+        print("program terminated please try again")
+        break
