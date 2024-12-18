@@ -8,6 +8,7 @@ def loading_screen(duration):
     # Number of steps for progress
     steps = 50
     # Iterate through each step
+    print()
     for i in range(steps + 1):
         # Calculate progress in percentage
         progress = (i / steps) * 100
@@ -24,25 +25,39 @@ def loading_screen(duration):
     print("Task Completed!")
 
 # Call the loading screen function with a desired duration (e.g., 5 seconds)
-loading_screen(5)
+loading_screen(3)
 
-name = input("Please Enter your name ----> ")
-print ("Hi! " + name )
 import os
+name = input("Please Enter your name ----> ")
+name = name.title()
+print ("Hi! " + name )
 tuloy = True
 while tuloy == True:
-    print("\n=====================================================================================\n\t\t\t\t\tMENU \nCode_Challenge1 --- 1 \tCode_Challenge11 --- 11 \tActivity1 --- 101 \nCode_Challenge2 --- 2 \tCode_Challenge12 --- 12 \tActivity2 --- 102 \nCode_Challenge3 --- 3 \tCode_Challenge13 --- 13 \tActivity3 --- 103 \nCode_Challenge4 --- 4 \tCode_Challenge14 --- 14 \tActivity4 --- 104 \nCode_Challenge5 --- 5 \tCode_Challenge15 --- 15 \tActivity5 --- 105 \nCode_Challenge6 --- 6 \tCode_Challenge16 --- 16 \tAvtivity6 --- 106 \nCode_Challenge7 --- 7 \t\t\t\t\tActivity7 --- 107 \nCode_Challenge8 --- 8 \t\t\t\t\tActivity8 --- 108 \nCode_Challenge9 --- 9 \t\t\t\t\tActivity9 --- 109 \nCode_Challenge10 -- 10 \t\t\t\t\tActivity110 --- 110 \nExit--0 \n======================================================================================")
-    a = int(input("\nCHOOSE ONLY ONE CHALLENGE U WANT TO OPEN (TYPE ONLY THE NUMBER): "))
+    print('''=====================================================================================================
+|               Activity                                    Code_Challenge                          |
+|Activity1  --- 101  Activity14 --- 130 | Code_Challenge1  --- 1   Code_Challenge11  --- 11         |
+|Activity2  --- 102  Activity15 --- 140 | Code_Challenge2  --- 2   Code_Challenge12  --- 12         |
+|Activity3  --- 103  Activity16 --- 150 | Code_Challenge5  --- 5   Code_Challenge15  --- 15         |
+|Activity4  --- 104  Activity18 --- 160 | Code_Challenge6  --- 6   Code_Challenge16  --- 16         |
+|Activity5  --- 105  Activity19 --- 170 | Code_Challenge7  --- 7                                    |
+|Activity6  --- 106  Activity20 --- 180 | Code_Challenge8  --- 8                                    |
+|Activity7  --- 107  Activity21 --- 190 | Code_Challenge10 --- 10                                   |
+|Activity8  --- 108  Activity22 --- 200 |                                                           |
+|Activity9  --- 109  Activity23 --- 210 |                                                           |   
+|Activity10 --- 110  Activity24 --- 220 |                                                           |
+|Activity12 --- 111  Activity25 --- 230 |                                                           |
+|Activity13 --- 120  Activity25 --- 240 | Exit --- 0                                                |
+=====================================================================================================''')
+    b = int(input("\nCHOOSE ONLY ONE CHALLENGE U WANT TO OPEN (TYPE ONLY THE NUMBER): "))
 
-
-    if a == 101:
+    if b == 101:
         os.system("cls")
         def Activity101(Activity101):
-             print("Hello World")
+            print("Hello World")
         Activity101(Activity101)
         continue
 
-    elif a == 102:
+    elif b == 102:
         os.system("cls")
         def Activity102(Activity102):
            name = input( "Please enter a name -----> " )
@@ -50,7 +65,7 @@ while tuloy == True:
         Activity102(Activity102)
         continue
 
-    elif a == 103:
+    elif b == 103:
         os.system("cls")
         def Activity103():
             name = input("Please input your name here ---> ")
@@ -71,7 +86,7 @@ while tuloy == True:
         Activity103()
         continue
     
-    elif a == 104:
+    elif b == 104:
         os.system("cls")
         def Activity104():
             number1 = eval (input("enter a number--->" ))
@@ -82,7 +97,7 @@ while tuloy == True:
         Activity104()
         continue
 
-    elif a == 105:    
+    elif b == 105:    
         os.system("cls")
         def Activity105():
          
@@ -94,7 +109,7 @@ while tuloy == True:
         Activity105()
         continue
     
-    elif a == 106:    
+    elif b == 106:    
         os.system("cls")
         def Activity106():
 
@@ -111,7 +126,7 @@ while tuloy == True:
         Activity106()
         continue
 
-    elif a == 107:    
+    elif b == 107:    
         os.system("cls")
         def Activity107():
 
@@ -128,7 +143,7 @@ while tuloy == True:
         Activity107()
         continue
 
-    elif a == 108:    
+    elif b == 108:
         os.system("cls")
         def Activity108():
 
@@ -147,7 +162,7 @@ while tuloy == True:
         Activity108()
         continue
 
-    elif a == 109:
+    elif b == 109:
         os.system("cls")
         def Activity109():
         
@@ -182,7 +197,7 @@ while tuloy == True:
         Activity109()
         continue
     
-    elif a == 110:
+    elif b == 110:
         os.system("cls")
         def Activity110():
             isDLL= input('Are you a current student of DLL (yes/no):  ')
@@ -217,14 +232,14 @@ while tuloy == True:
                 print('Thanks for stopping by')
         Activity110()
         continue
-    elif a == 111:
+    elif b == 111:
         os.system("cls")
         def Activity111():
             for me in range (1 , 101):
                 print(me, 'GOODBYE WORLD')
         Activity111()
         continue
-    elif a == 121:
+    elif b == 121:
         os.system("cls")
         def Activity121():
 
@@ -233,7 +248,7 @@ while tuloy == True:
         Activity121()
         continue
     
-    elif a == 130:
+    elif b == 130:
         os.system("cls")
         def Activity130():
             sum = 1
@@ -245,7 +260,7 @@ while tuloy == True:
         Activity130()
         continue
 
-    elif a == 140:
+    elif b == 140:
         os.system("cls")
         def Activity140():
                 
@@ -257,7 +272,7 @@ while tuloy == True:
         Activity140()
         continue
 
-    elif a == 150:
+    elif b == 150:
         os.system("cls")
         def Activity15():
                 import os
@@ -287,7 +302,7 @@ while tuloy == True:
         Activity15()
         continue
 
-    elif a == 160:
+    elif b == 160:
         os.system("cls")
         def Activity160():
         
@@ -300,11 +315,10 @@ while tuloy == True:
         Activity160()
         continue
     
-    elif a == 170:
+    elif b == 170:
         os.system("cls")
         def Activity170():
                 col = eval(input("Enter number of columns---> "))
-
 
                 for x in range (1, 11):
                     for y in range (1, col + 1):
@@ -313,7 +327,7 @@ while tuloy == True:
         Activity170()
         continue
     
-    elif a == 180:
+    elif b == 180:
         os.system("cls")
         def Activity180():
 
@@ -329,7 +343,7 @@ while tuloy == True:
         Activity180()
         continue
     
-    elif a == 190:
+    elif b == 190:
         os.system("cls")
         def Activity190():
             tuloy = True
@@ -344,9 +358,9 @@ while tuloy == True:
         Activity190()
         continue
 
-    elif a == 120:
+    elif b == 220:
         os.system("cls")
-        def Activity120():
+        def Activity220():
             import os
 
             isContinue = True
@@ -369,12 +383,12 @@ while tuloy == True:
                                 print(" ",end=" ")
                         print()
                     continue
-        Activity120()
+        Activity220()
         continue
     
-    elif a == 121:
+    elif b == 210:
         os.system("cls")
-        def Activity21():
+        def Activity210():
             def pang_hi():
                 print("HI IT1C")
 
@@ -402,17 +416,72 @@ while tuloy == True:
                 else:
                     termi()
                     break
-        Activity21()
+        Activity210()
         continue
-    
-    elif a == 1:
+
+    elif b == 220:
+        os.system
+        def Activity220():
+            go = True
+            names_list = []
+
+            while go:
+                name = input("Enter a name (Enter 'stop' to stop): ")
+                if name.lower() == "stop":
+                    print(f"Here's your list of names : {names_list}")
+                    print(f"You have entered {len(names_list)} names!")
+                    break
+                else:
+                    names_list.append(name)
+        Activity220()
+        continue
+    elif b == 230:
+        os.system
+        def Activity230():
+            number = int(input("Enter the number you want to factor: "))
+            print("\n\t========================== ACTIVITY 23 ==========================\n")
+            
+            # Initialize factorial to 1
+            fact = 1
+            
+            # Calculate factorial
+            for x in range(number, 0, -1):
+                fact *= x  # Multiply fact by the current value of x
+            
+            print(f"The factorial of {number} is: {fact}")
+            return fact
+
+        Activity230()
+        continue
+
+    elif b == 240:
+        os.system
+        def Activity250():
+            print("\n\t========================== ACTIVITY 25 ==========================\n")
+            #LIST
+            #fruits1 = "apple"
+            #fruits2 = "banana"
+            #fruits3 = "orange"
+            #fruits4 = "star apple"
+            #fruits5 = "guyabano"
+            fruits = ["apples", "banana", "orange", "star apple", "guyabano"]
+            print(f"\n\t{fruits}")
+            print(f"\n\tMy favorite childhood fruit is {fruits[-1]}")
+            fruits.append("longgan")
+            print(f"\n\t{fruits}")
+        Activity250()
+        continue
+
+
+
+    elif b == 1:
         os.system("cls")
         def code_challenge1():
             print("\t\t\t\t\t\t\t\t\b*\n\t\t\t\t\t\t\t\t\b\b***\n\t\t\t\t\t\t\t\t\b\b\b*****\n\t\t\t\t\t\t\t\t\b\b\b\b*******\n\t\t\t\t\t\t\t\t\b\b\b\b\b*********\n\t\t\t\t\t\t\t\t\b\b\b\b*******\n\t\t\t\t\t\t\t\t\b\b\b*****\n\t\t\t\t\t\t\t\t\b\b***\n\t\t\t\t\t\t\t\t\b*")
         code_challenge1()
         continue
 
-    elif a == 2:
+    elif b == 2:
         os.system("cls")
         def code_challenge2():
             name = input("please enter your name ---->")
@@ -421,7 +490,7 @@ while tuloy == True:
         code_challenge2()
         continue
 
-    elif a == 3:
+    elif b == 3:
         os.system("cls")
         def code_challenge3():
             name = input("Please input your name here ---> ")
@@ -444,7 +513,7 @@ while tuloy == True:
         code_challenge3()
         continue
 
-    elif a == 4:
+    elif b == 4:
         os.system("cls")
         def code_challenge4():   
             no1 = eval(input("choose a number---> "))
@@ -466,7 +535,7 @@ while tuloy == True:
             print("the floor division of", no1 ,"and", no2 ,"is", ans7 ,)
         code_challenge4
 
-    elif a == 5:
+    elif b == 5:
         os.system("cls")
         def code_challenge5():
             name=input('enter your name:')
@@ -513,7 +582,7 @@ while tuloy == True:
         code_challenge5()
         continue
 
-    elif a == 6:
+    elif b == 6:
         os.system("cls")
         def code_challenge6():
 
@@ -538,7 +607,7 @@ while tuloy == True:
         code_challenge6()
         continue
     
-    elif a == 7:
+    elif b == 7:
         os.system("cls")
         def code_challenge7():
             A = input("DID YOU BUY A MEAT GOOD/s (yes/no)? ")
@@ -616,7 +685,7 @@ while tuloy == True:
         code_challenge7()
         continue
 
-    elif a == 8:
+    elif b == 8:
         os.system("cls")
         def code_challenge8():
             sum = 0
@@ -637,7 +706,7 @@ while tuloy == True:
         code_challenge8()
         continue
     
-    elif a == 9:
+    elif b == 9:
         os.system("cls")
         def code_challenge9():
             for x in range(1,6):
@@ -651,7 +720,7 @@ while tuloy == True:
         code_challenge9()
         continue
 
-    elif a == 10:
+    elif b == 10:
         os.system("cls")
         def code_challenge10():
 
@@ -675,7 +744,7 @@ while tuloy == True:
         code_challenge10()
         continue
 
-    elif a == 11:
+    elif b == 11:
         os.system("cls")
         def code_challenge11():
 
@@ -699,7 +768,7 @@ while tuloy == True:
         code_challenge11()
         continue
     
-    elif a == 12:
+    elif b == 12:
         os.system("cls")
         def code_challenge12():
 
@@ -721,7 +790,7 @@ while tuloy == True:
         code_challenge12()
         continue
 
-    elif a == 13:
+    elif b == 13:
         os.system("cls")
         def code_challenge13():
             for x in range (6,1,-1):
@@ -744,7 +813,7 @@ while tuloy == True:
         code_challenge13()
         continue
 
-    elif a == 14:
+    elif b == 14:
         os.system("cls")
         def code_challenge14():
             tuloy = True
@@ -761,7 +830,7 @@ while tuloy == True:
         code_challenge14()
         continue
 
-    elif a == 15:
+    elif b == 15:
         os.system("cls")
         def code_challenge15():
             import os
@@ -791,119 +860,107 @@ while tuloy == True:
         code_challenge15()
         continue
 
-    elif a == 16:
+    elif b == 16:
         os.system("cls")
         def code_challenge16():
-            def denomination(amount):
-                    print("\nDenomination Breakdown:")
-                    A = amount // 1000
-                    AA = amount % 1000
+            def breakdown_denomination(amount):
+                print("Denomination Breakdown:")
+                denominations = (1000, 500, 200, 100, 50, 20, 10, 5, 1)
+                for denom in denominations:
+                    if amount >= denom:
+                        count = amount // denom
+                        print("PHP", denom, ":", count)
+                        amount = amount % denom
 
-                    B = AA // 500
-                    BB = AA % 500
 
-                    C = BB // 200
-                    CC = BB % 200
-
-                    D = CC // 100
-                    DD = CC % 100
-
-                    E = DD // 50
-                    EE = DD % 50
-
-                    F = EE // 20
-                    FF = EE % 20
-
-                    G = FF // 10
-                    GG = FF % 10
-
-                    H = GG // 5
-                    HH = GG % 5
-
-                    I = HH // 1
-
-                    print("1000---", A)
-                    print("500----", B)
-                    print("200----", C)
-                    print("100----", D)
-                    print("50-----", E)
-                    print("20-----", F)
-                    print("10-----", G)
-                    print("5------", H)
-                    print("1------", I)
-            accounts = {}
             def create_account():
-                    username = input("Enter a username: ")
-                    if username in accounts:
-                        print("Account already exists!")
+                account_name = input("Enter your name: ")
+                initial_deposit = eval(input("Enter initial deposit: "))
+                if initial_deposit >= 0:
+                    print("Account created for", account_name, "with balance PHP", initial_deposit)
+                    return account_name, initial_deposit
+                else:
+                    print("Initial deposit must be 0 or more.")
+                    return None, 0
+
+
+            def deposit(account_name, account_balance):
+                if account_name == None:  
+                    print("No account found. Please create an account first.")
+                else:
+                    amount = eval(input("Enter amount to deposit: "))
+                    if amount > 0:
+                        account_balance += amount
+                        print("Deposited PHP", amount, ". Current balance: PHP", account_balance)
+                        breakdown_denomination(amount)
                     else:
-                        accounts[username] = 0
-                        print(f"Account created successfully for {username}.")
-            def deposit():
-                    username = input("Enter your username: ")
-                    if username in accounts:
-                        try:
-                            amount = int(input("Enter amount to deposit : "))
-                            if amount > 0:
-                                accounts[username] += amount
-                                print(f"Deposited {amount} successfully. New balance: {accounts[username]}")
-                                denomination(amount)
-                            else:
-                                print("Amount must be positive!")
-                        except ValueError:
-                            print("Invalid input! Please enter a whole number.")
+                        print("Deposit amount must be greater than 0.")
+                return account_balance
+
+
+            def withdraw(account_name, account_balance):
+                if account_name == None:
+                    print("No account found. Please create an account first.")
+                else:
+                    amount = eval(input("Enter amount to withdraw: "))
+                    if amount > account_balance:
+                        print("Insufficient balance!")
+                    elif amount > 0:
+                        account_balance -= amount
+                        print("Withdrew PHP", amount, ". Current balance: PHP", account_balance)
                     else:
-                        print("Account not found!")
-            def withdrawal():
-                    username = input("Enter your username: ")
-                    if username in accounts:
-                        try:
-                            amount = int(input("Enter amount to withdraw (whole numbers only): "))
-                            if 0 < amount <= accounts[username]:
-                                accounts[username] -= amount
-                                print(f"Withdrawn {amount} successfully. Remaining balance: {accounts[username]}")
-                                denomination(amount)
-                            else:
-                                print("Insufficient funds or invalid amount!")
-                        except ValueError:
-                            print("Invalid input! Please enter a whole number.")
+                        print("Withdrawal amount must be greater than 0.")
+                return account_balance
+
+
+            def check_balance(account_name, account_balance):
+                if account_name == None:
+                    print("No account found. Please create an account first.")
+                else:
+                    print("Your current balance is PHP", account_balance)
+
+
+            def main():
+                account_name = None
+                account_balance = 0
+
+                while True:
+                    print("\n=== Welcome to J-Bank ===")
+                    print("1. Create Account")
+                    print("2. Deposit")
+                    print("3. Withdraw")
+                    print("4. Check Balance")
+                    print("5. Exit")
+                    choice = input("Choose an option (1-5): ")
+
+                    if choice == "1":
+                        account_name, account_balance = create_account()
+                    elif choice == "2":
+                        account_balance = deposit(account_name, account_balance)
+                    elif choice == "3":
+                        account_balance = withdraw(account_name, account_balance)
+                    elif choice == "4":
+                        check_balance(account_name, account_balance)
+                    elif choice == "5":
+                        print("Thank you for using the banking system!")
+                        break
                     else:
-                        print("Account not found!")
+                        print("Invalid option. Please try again.")
 
-
-            def check_balance():
-                    username = input("Enter your username: ")
-                    if username in accounts:
-                        print(f"Your balance: {accounts[username]}")
-                    else:
-                        print("Account not found!")
-
-
-            def options():
-                    while True:
-                        print("\nBanking System")
-                        print("1. Create Account")
-                        print("2. Deposit")
-                        print("3. Withdraw")
-                        print("4. Check Balance")
-                        print("5. Exit")
-                        choice = input("Choose an option (1-5): ")
-
-                        if choice == '1':
-                            create_account()
-                        elif choice == '2':
-                            deposit()
-                        elif choice == '3':
-                            withdrawal()
-                        elif choice == '4':
-                            check_balance()
-                        elif choice == '5' or "Exit":
-                            print("Thank you for using the Banking System!")
-                            break
-                        else:
-                            print("Invalid option. Please try again.")
+            main()
         code_challenge16()
         continue
-    else:   
-        print("program terminated please try again")
+
+    elif b == 0:
+        os.system("cls")
+        def Exit0():
+            print("\nProgram terminated, Thank you for checking my Program.\n")
+            print("Thankyou")
+        print('''by Khian Mharc L. Pineda 
+BSIT 1-C''')
+        Exit0()
         break
+        
+    else:   
+        print("Invalid Choice, Please try again.")
+        continue
